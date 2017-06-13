@@ -91,7 +91,7 @@ static inline bool has_enough_invalid_blocks(struct f2fs_sb_info *sbi)
 	block_t invalid_user_blocks = sbi->user_block_count -
 					written_block_count(sbi);
 	/*
-	 * Background GC is triggered with the following conditions.
+	 * Background GC is triggered with the following condition.
 	 * 1. There are a number of invalid blocks.
 	 * 2. There is not enough free space.
 	 */
@@ -105,6 +105,6 @@ static inline int is_idle(struct f2fs_sb_info *sbi)
 {
 	struct block_device *bdev = sbi->sb->s_bdev;
 	struct request_queue *q = bdev_get_queue(bdev);
-	struct request_list *rl = &q->root_rl;
+	struct request_list *rl = &q->rq;
 	return !(rl->count[BLK_RW_SYNC]) && !(rl->count[BLK_RW_ASYNC]);
 }
