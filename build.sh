@@ -4,7 +4,7 @@
 # root directory of LGE msm8996 git repo (default is this script's location)
 RDIR=$(pwd)
 
-VER=V1.11
+VER=V1.2
 FIRM=vs99510b
 
 
