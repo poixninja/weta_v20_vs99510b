@@ -4,8 +4,8 @@
 # root directory of LGE msm8996 git repo (default is this script's location)
 RDIR=$(pwd)
 
-VER=V1.2
-FIRM=vs99510b
+VER=V1.21
+FIRM=h91810k
 
 
 TOOLCHAIN=$HOME/kernel/toolchain/ndk/bin/aarch64-linux-android-
