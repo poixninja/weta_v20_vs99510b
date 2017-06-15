@@ -5,7 +5,7 @@
 RDIR=$(pwd)
 
 VER=V1.21
-FIRM=h91810k
+FIRM=vs99510b
 
 
 TOOLCHAIN=$HOME/kernel/toolchain/ndk/bin/aarch64-linux-android-
